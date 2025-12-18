@@ -1,0 +1,3 @@
+create a simple vite app just a landing page with some sweet animations
+and funky hello world self writing and
+erasing text animaition like cyberpunk theme vibes
