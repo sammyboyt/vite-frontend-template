@@ -1,3 +1,30 @@
+/**
+ * 🤖 AI AGENT GUIDANCE: BUTTON COMPONENT IMPLEMENTATION
+ *
+ * REQUIRED: You must implement a Button component with these exact variants and props.
+ * This component demonstrates proper TypeScript usage, class-variance-authority patterns,
+ * and Radix UI Slot composition.
+ *
+ * REQUIRED VARIANTS: primary, secondary, outline, ghost, success, warning, danger
+ * REQUIRED SIZES: xs, sm, default, lg, xl
+ * REQUIRED PROPS: variant, size, loading, disabled, children
+ * REQUIRED: Use class-variance-authority (cva) for variant management
+ * REQUIRED: Support asChild prop with Radix Slot for composition
+ *
+ * USAGE EXAMPLES (you must support all of these):
+ * <Button variant="primary" size="lg">Primary Large</Button>
+ * <Button variant="outline" loading>Submitting...</Button>
+ * <Button variant="ghost" size="sm">Small Ghost</Button>
+ *
+ * IMPLEMENTATION REQUIREMENTS:
+ * - Strict TypeScript interfaces (no any types)
+ * - Proper accessibility (aria attributes)
+ * - Loading state with spinner
+ * - Focus management
+ * - Keyboard navigation
+ * - Disabled state handling
+ */
+
 import React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'

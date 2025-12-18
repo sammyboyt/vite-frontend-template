@@ -36,8 +36,8 @@ export default defineConfig({
     },
   },
   server: {
-    port: 3000,
+    port: process.env.VITE_PORT ? parseInt(process.env.VITE_PORT) : 5174,
     host: "0.0.0.0",
-    strictPort: true,
+    strictPort: false,
   }
 })

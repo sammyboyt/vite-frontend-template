@@ -104,6 +104,33 @@ temp/
 # Optional stylelint cache
 .stylelintcache
 
+# Testing artifacts
+playwright-report/
+test-results/
+test-screenshots/
+test-videos/
+playwright/.cache/
+.nyc_output
+coverage/
+
+# Playwright specific
+test-results/
+playwright-report/
+blob-report/
+ms-playwright/
+
+# Jest/Vitest coverage
+coverage/
+.nyc_output/
+
+# Test artifacts
+*.snap
+__snapshots__/
+
+# Performance testing
+lighthouse/
+artifacts/
+
 # Microbundle cache
 .rpt2_cache/
 .rts2_cache_cjs/

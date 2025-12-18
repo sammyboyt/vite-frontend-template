@@ -1,3 +1,43 @@
+/**
+ * 🤖 AI AGENT GUIDANCE: MODAL COMPONENT IMPLEMENTATION
+ *
+ * REQUIRED: You must implement a Modal component that integrates with Redux useModal hook.
+ * This demonstrates proper modal patterns with accessibility, focus management, and portal rendering.
+ *
+ * REQUIRED PROPS:
+ * - modalId: string (for Redux integration)
+ * - isOpen?: boolean (optional, can use Redux state)
+ * - onClose?: () => void (close handler)
+ * - title?: string (modal title)
+ * - children: React.ReactNode (modal content)
+ * - size?: 'sm' | 'md' | 'lg' | 'xl' (modal size)
+ * - footer?: React.ReactNode (modal footer content)
+ *
+ * USAGE WITH REDUX (required pattern):
+ * const { isOpen, open, close } = useModal('settings')
+ * return (
+ *   <Modal modalId="settings" title="Settings" footer={<Button>Save</Button>}>
+ *     <SettingsForm />
+ *   </Modal>
+ * )
+ *
+ * USAGE WITH PROPS (alternative):
+ * <Modal isOpen={showModal} onClose={closeModal} title="Confirm">
+ *   <p>Are you sure?</p>
+ * </Modal>
+ *
+ * IMPLEMENTATION REQUIREMENTS:
+ * - React.createPortal for proper DOM positioning
+ * - Focus trapping and management
+ * - Keyboard navigation (Escape to close)
+ * - Backdrop click to close
+ * - Accessibility (ARIA attributes, focus management)
+ * - Proper z-index layering
+ * - Responsive design
+ * - Animation transitions
+ * - TypeScript strict typing
+ */
+
 import React, { useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { useSelector } from 'react-redux'

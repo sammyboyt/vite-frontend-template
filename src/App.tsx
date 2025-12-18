@@ -1,3 +1,47 @@
+/**
+ * 🤖 AI AGENT GUIDANCE: MAIN APPLICATION STRUCTURE
+ *
+ * This App.tsx demonstrates the complete React application architecture you must implement:
+ *
+ * REQUIRED PATTERNS:
+ * - React 18 with hooks (useState, useEffect, etc.)
+ * - TypeScript with strict typing (no 'any' types)
+ * - Redux Toolkit for global state management
+ * - Custom hooks for reusable logic
+ * - Error boundaries for error handling
+ * - Theme system with dark/light mode
+ * - Responsive design with mobile detection
+ * - Proper component composition
+ *
+ * KEY COMPONENTS YOU MUST IMPLEMENT:
+ * - Button (variants: primary, secondary, outline, ghost, success, warning, danger)
+ * - Input (with labels, validation, help text, error states)
+ * - Modal/SimpleModal (with useModal hook integration)
+ * - Tabs system (TabsList, TabsTrigger, TabsContent)
+ * - Toast notifications (success, error, warning, info)
+ *
+ * REQUIRED HOOKS:
+ * - useModal(modalId) - Redux-powered modal state
+ * - useTheme() - Theme switching with persistence
+ * - useNotifications() - Toast notification system
+ * - useLocalStorage(key, defaultValue) - Type-safe localStorage
+ * - useDebounce(value, delay) - Debounced values
+ * - useIsMobile() - Responsive breakpoint detection
+ *
+ * REDUX STATE REQUIREMENTS:
+ * - uiSlice: Modal states, sidebar visibility
+ * - themeSlice: Theme state (light/dark/system)
+ * - notificationSlice: Toast notification queue
+ *
+ * YOUR APP MUST:
+ * - Handle loading and error states appropriately
+ * - Be fully responsive (mobile-first)
+ * - Use proper TypeScript interfaces
+ * - Pass all Playwright tests in tests/app.spec.ts
+ * - Build successfully with yarn build
+ * - Pass yarn type-check with zero errors
+ */
+
 import React from 'react'
 import { Button, Input, Modal, SimpleModal, Tabs, TabsList, TabsTrigger, TabsContent, TabsCompound, ToastContainer } from './components'
 import { useModal, useTheme, useNotifications, useIsMobile, useLocalStorage, useDebounce } from './hooks'
